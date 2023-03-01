@@ -1,9 +1,9 @@
 <?php
 
-require_once 'vendor/autoload.php'; // Include Composer's autoloader
+require_once 'vendor/autoload.php';
 
 use App\Application;
 
-$app = new Application('path/to/subscriptions.csv');
+$app = new Application('MockData/MOCK_DATA.csv');
 $app->run();
 

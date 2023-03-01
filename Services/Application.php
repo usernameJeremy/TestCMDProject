@@ -24,7 +24,7 @@ class Application
         }
 
         // Werk alle vervaldatums bij
-        $this->subscriptionManager->updateVervaldatums();
+        $this->subscriptionManager->updateExpirationDate();
 
         // Schrijf de bijgewerkte abonnementen terug naar het CSV-bestand
         $this->csvWriter->saveSubscriptionsToCSV($this->subscriptionManager->getSubscriptions());
